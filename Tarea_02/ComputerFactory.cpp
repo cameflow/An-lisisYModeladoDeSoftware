@@ -28,7 +28,7 @@ AbstractComputer* ComputerFactory::create(std::string type)
 
 ComputerFactory* ComputerFactory::instance = nullptr;
 
-ComputerFactory* ComputerFactory::getInstance()
+ComputerFactory* ComputerFactory::createInstance()
 {
   if (ComputerFactory::instance == nullptr)
   {

@@ -4,7 +4,7 @@
 
 
 int main(int argc, char const *argv[]) {
-  ComputerFactory* factory = ComputerFactory::getInstance();
+  ComputerFactory* factory = ComputerFactory::createInstance();
   AbstractComputer* l = factory->create("Laptop");
   AbstractComputer* d = factory->create("Desktop");
   AbstractComputer* n = factory->create("Netbook");

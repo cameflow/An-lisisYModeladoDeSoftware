@@ -8,5 +8,5 @@ class ComputerFactory : public AbstractComputerFactory {
 
  public:
   AbstractComputer * create(std::string type);
-  static ComputerFactory* getInstance();
+  static ComputerFactory* createInstance();
 };
