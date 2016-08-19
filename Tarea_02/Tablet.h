@@ -4,6 +4,10 @@ class Tablet : public AbstractComputer {
  private:
   Tablet() {}
  public:
-  std::string describe();
   static Tablet* create();
+  std::string describe();
+  std::string ensamble();
+  std::string configure();
+  std::string install();
+  std::string pack();
 };

@@ -5,6 +5,10 @@ class Desktop : public AbstractComputer {
  private:
   Desktop() {}
  public:
+  static Desktop * create(); 
   std::string describe();
-  static Desktop * create();
+  std::string ensamble();
+  std::string configure();
+  std::string install();
+  std::string pack();
 };

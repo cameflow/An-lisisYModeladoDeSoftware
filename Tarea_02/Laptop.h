@@ -5,6 +5,10 @@ class Laptop : public AbstractComputer {
  private:
   Laptop() {}
  public:
-  std::string describe();
   static Laptop* create();
+  std::string describe();
+  std::string ensamble();
+  std::string configure();
+  std::string install();
+  std::string pack();
 };
